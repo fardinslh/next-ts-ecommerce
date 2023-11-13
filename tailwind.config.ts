@@ -20,7 +20,7 @@ const config: Config = {
           warning: "#a6610c",
           error: "#f43440",
           body: {
-            "background-color": "e3e6e6",
+            "background-color": "#e3e6e6",
           },
         },
       },
