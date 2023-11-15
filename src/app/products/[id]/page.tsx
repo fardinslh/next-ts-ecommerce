@@ -5,6 +5,7 @@ import PriceTag from "@/components/PriceTag";
 import { Metadata } from "next";
 import { cache } from "react";
 import AddToCartButton from "@/app/products/[id]/AddToCartButton";
+import { incrementProductQuantity } from "./actions";
 
 interface ProductPageProps {
   params: {
@@ -53,7 +54,10 @@ const ProductPage = async ({ params: { id } }: ProductPageProps) => {
         <h1 className="text-5xl font-bold">{product.name}</h1>
         <PriceTag price={product.price} className="mt-4" />
         <p className="py-6">{product.description}</p>
-        <AddToCartButton productId={id} />
+        <AddToCartButton
+          incrementProductQuantity={incrementProductQuantity}
+          productId={id}
+        />
       </div>
     </div>
   );
