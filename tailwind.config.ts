@@ -19,9 +19,9 @@ const config: Config = {
           success: "#36ddbc",
           warning: "#a6610c",
           error: "#f43440",
-          // body: {
-          //   "background-color": "#e3e6e6",
-          // },
+          body: {
+            "background-color": "#e3e6e6",
+          },
         },
       },
     ],
